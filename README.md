@@ -19,8 +19,8 @@ https://hub.docker.com/_/postgres
 Clone the repository
  > `git clone git@github.com:purinda/docker-postgres.git`
 
-Run 
- > `./build`
+Build, the `MAJOR` and `MINOR` values gets concatanated to build an specific version image.
+ > `export MAJOR=8.4 && export MINOR=20 && ./build.sh`
 
 Now you can run the following to see the built image
 > `docker images` 
