@@ -16,4 +16,19 @@ https://hub.docker.com/_/postgres
 
 # Instructions
 
-.. soon to be filled.
+Clone the repository
+ > `git clone git@github.com:purinda/docker-postgres.git`
+
+Run 
+ > `./build`
+
+Now you can run the following to see the built image
+> `docker images` 
+
+## How to use it
+
+The image tag can be used in your docker-compose file under `Image` tag or run standalone as below
+
+```
+docker run -it --rm --link some-postgres:postgres postgres psql -h postgres -U postgres
+```

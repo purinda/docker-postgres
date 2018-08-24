@@ -6,8 +6,8 @@
 # pull down and build.
 FROM alpine:3.8
 
-ENV PG_MAJOR 8.4
-ENV PG_VERSION 8.4.20
+ARG PG_MAJOR=8.4
+ARG PG_VERSION=8.4.20
 
 # alpine includes "postgres" user/group in base install
 #   /etc/passwd:22:postgres:x:70:70::/var/lib/postgresql:/bin/sh
